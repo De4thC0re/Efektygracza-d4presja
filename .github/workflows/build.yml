@@ -20,9 +20,8 @@ jobs:
       - name: Compile Plugin
         run: |
           mkdir -p build/classes
-          javac -d build/classes $(find src/main/java -name "*.java")
-          cd build/classes
-          jar cf ../../EfektyGracza.jar pl
+          javac -d build/classes src/main/java/pl/banknotmc/efekty/EfektyGracza.java
+          jar cf EfektyGracza.jar -C build/classes pl
 
       - name: Upload JAR
         uses: actions/upload-artifact@v3
