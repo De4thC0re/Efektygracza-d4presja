@@ -1,0 +1,8 @@
+name: EfektyGracza
+version: 1.0
+main: pl.banknotmc.efekty.EfektyGracza
+api-version: 1.21
+commands:
+  efektygracza:
+    description: Otwiera GUI z efektami particle
+    usage: /efektygracza
